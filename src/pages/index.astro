@@ -1,0 +1,24 @@
+---
+import '../styles/globals.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Analitix — Optimiza tu distribución" description="Consultoría en última milla, analítica y georreferenciación.">
+  <section class="grid lg:grid-cols-2 gap-8 items-center py-12">
+    <div>
+      <h1 class="text-4xl font-bold leading-tight">Rendimiento y datos al servicio de tu distribución</h1>
+      <p class="mt-4 text-lg text-slate-600">Rutas inteligentes, reportes en tiempo real y automatización con n8n.</p>
+      <div class="mt-6 flex gap-3">
+        <a href="/contacto" class="px-4 py-2 rounded bg-slate-900 text-white">Solicitar demo</a>
+        <a href="/servicios/optimiza" class="px-4 py-2 rounded border">Ver servicios</a>
+      </div>
+    </div>
+    <div class="border rounded-xl p-6">
+      <h2 class="font-semibold mb-2">Beneficios</h2>
+      <ul class="list-disc pl-6 space-y-1 text-slate-700">
+        <li>Puntualidad y cobertura</li>
+        <li>Reducción de costos</li>
+        <li>Integraciones GA4, Power BI, n8n</li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

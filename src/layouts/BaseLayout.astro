@@ -1,0 +1,35 @@
+---
+const { title = 'Analitix', description = 'Consultoría y última milla' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body class="min-h-screen bg-white text-slate-900">
+    <header class="border-b">
+      <nav class="mx-auto max-w-6xl p-4 flex justify-between">
+        <a href="/" class="font-bold">ANALITIX</a>
+        <ul class="flex gap-6 text-sm">
+          <li><a href="/servicios/optimiza" class="hover:underline">Servicios</a></li>
+          <li><a href="/casos" class="hover:underline">Casos</a></li>
+          <li><a href="/blog/primer-post" class="hover:underline">Blog</a></li>
+          <li><a href="/nosotros" class="hover:underline">Nosotros</a></li>
+          <li><a href="/contacto" class="px-3 py-1 rounded bg-slate-900 text-white">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="mx-auto max-w-6xl p-4">
+      <slot />
+    </main>
+    <footer class="mt-20 border-t">
+      <div class="mx-auto max-w-6xl p-4 text-sm text-slate-500">
+        © {new Date().getFullYear()} Analitix — Todos los derechos reservados.
+      </div>
+    </footer>
+  </body>
+</html>
